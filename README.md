@@ -64,7 +64,7 @@ Target Variable:
 1 = Rain Expected
 0 = No Rain
 
-##Machine Learning Pipeline
+## Machine Learning Pipeline
 
 The project follows the standard machine learning workflow:
 
@@ -78,7 +78,7 @@ The project follows the standard machine learning workflow:
   Model Evaluation
   Model Deployment
 
-##Evaluation Metrics Used
+## Evaluation Metrics Used
 
 The following metrics were used to evaluate the models:
   
