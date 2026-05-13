@@ -55,8 +55,7 @@ WeatherRainPrediction/
 ├── main.py
 ├── requirements.txt
 └── README.md
-
-```bash
+```
 
 ## Dataset Information
 Dataset Rows: 14,471
@@ -99,25 +98,25 @@ Balanced Performance Across Classes
 ## Installation Guide
 ### 1. Clone Repository
     
-    git clone <https://github.com/geraldnofuckstogive666/CS324--weather-rain-prediction-system.git>
+   ``` git clone <https://github.com/geraldnofuckstogive666/CS324--weather-rain-prediction-system.git>```
 
 ### 2. Navigate Into Project
 
-  cd WeatherRainPrediction
+ ``` cd WeatherRainPrediction```
 
 ### 3. Install Required Dependencies
 
-  pip install -r requirements.txt
+  ```pip install -r requirements.txt```
 
 ## Run The Machine Learning Pipeline
 
 Train models and generate saved model files:
 
-  py main.py
+```  py main.py```
 
 ## Run Streamlit Web Application
 
-    streamlit run ui/app.py
+   ``` streamlit run ui/app.py ```
 
 
 ## Streamlit Deployment
