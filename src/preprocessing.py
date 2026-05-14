@@ -5,7 +5,7 @@ from pathlib import Path
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
 from sklearn.preprocessing import StandardScaler
-
+from imblearn.over_sampling import SMOTE
 
 def load_and_preprocess_data():
 
@@ -118,10 +118,10 @@ def load_and_preprocess_data():
     print(X.columns.tolist())
 
     y = df['WillRain']
+
     # ==============================
     # TRAIN / VALIDATION / TEST SPLIT
     # ==============================
-
     X_remaining, X_test, y_remaining, y_test = train_test_split(
         X,
         y,
@@ -141,15 +141,22 @@ def load_and_preprocess_data():
     print("Data splitting completed!")
 
     # ==============================
+    # SMOTE
+    # ==============================
+    smote = SMOTE(random_state=42)
+
+    X_train, y_train = smote.fit_resample(X_train, y_train)
+
+    print("SMOTE applied successfully!")
+    print(y_train.value_counts())
+
+    # ==============================
     # FEATURE SCALING
     # ==============================
-
     scaler = StandardScaler()
 
     X_train_scaled = scaler.fit_transform(X_train)
-
     X_validation_scaled = scaler.transform(X_validation)
-
     X_test_scaled = scaler.transform(X_test)
 
     print("Feature scaling completed!")
