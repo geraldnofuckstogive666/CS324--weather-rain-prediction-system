@@ -12,7 +12,22 @@ from src.train_models import (
 
 from src.evaluate_models import evaluate_model
 
+# ==============================
+# LOAD + PREPROCESS DATA
+# ==============================
+(
+    X_train,
+    X_validation,
+    X_test,
+    y_train,
+    y_validation,
+    y_test,
+    X_train_scaled,
+    X_validation_scaled,
+    X_test_scaled,
+    scaler
 
+) = load_and_preprocess_data()
 
 
 # ==============================
