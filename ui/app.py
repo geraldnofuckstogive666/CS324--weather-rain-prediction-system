@@ -86,15 +86,15 @@ if page == "Dashboard":
             "Random Forest"
         ],
         "Validation Accuracy": [
-            "76.95%",
-            "79.65%",
-            "90.46%"
-        ],
-        "Rain Recall": [
-            "87%",
-            "78%",
-            "33%"
-        ]
+                    "77.64%",
+                    "82.20%",
+                    "89.74%"
+                ],
+                "Rain Recall": [
+                    "83%",
+                    "74%",
+                    "54%"
+                ]
     })
 
     st.dataframe(
