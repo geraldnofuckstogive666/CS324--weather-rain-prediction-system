@@ -58,24 +58,41 @@ WeatherRainPrediction/
 ```
 
 ## Dataset Information
+
+
 Dataset Rows: 14,471
+
 Features Used: 18
+
 Target Variable:
+
 1 = Rain Expected
+
 0 = No Rain
+
+
+
 
 ## Machine Learning Pipeline
 
 The project follows the standard machine learning workflow:
 
   Data Collection
+  
   Data Cleaning
+  
   Missing Value Handling
+  
   Feature Encoding
+  
   Feature Scaling
+  
   Data Splitting
+  
   Model Training
+  
   Model Evaluation
+  
   Model Deployment
 
 ## Evaluation Metrics Used
@@ -83,19 +100,28 @@ The project follows the standard machine learning workflow:
 The following metrics were used to evaluate the models:
   
   Accuracy
+  
   Precision
+  
   Recall
+  
   F1-Score
+  
   Confusion Matrix
 
 ## Final Model Performance
+
 #### Random Forest Final Test Results
+
 Accuracy: ~90%
+
 Rain Detection Recall: ~58%
+
 Balanced Performance Across Classes
 
 
 ## Installation Guide
+
 ### 1. Clone Repository
     
    ``` git clone <https://github.com/geraldnofuckstogive666/CS324--weather-rain-prediction-system.git>```
@@ -119,23 +145,23 @@ Train models and generate saved model files:
    ``` streamlit run ui/app.py ```
 
 
+
+
+
 ## Streamlit Deployment
 
-This project can also be deployed using Streamlit Cloud.
+This project is deployed using Streamlit Cloud.
 
-### Deployment Steps
-Push project to GitHub
-Open Streamlit Cloud
-Connect GitHub repository
-Select:
-ui/app.py
-Deploy application
-Dependencies
 
-Main libraries used:
+
+## Main libraries used:
 
 pandas
+
 numpy
+
 scikit-learn
+
 streamlit
+
 joblib
