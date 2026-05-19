@@ -1,4 +1,4 @@
-# CS324--weather-rain-prediction-system
+# CS324-weather-rain-prediction-system
 A public repository for CS324 - Machine Learning Final Project 
 
 
@@ -17,6 +17,11 @@ The project predicts whether rain is expected based on weather-related features 
 - Visibility
 
 ---
+
+
+
+
+
 
 # Machine Learning Models Used
 
@@ -57,6 +62,10 @@ WeatherRainPrediction/
 └── README.md
 ```
 
+
+
+
+
 ## Dataset Information
 
 
@@ -69,6 +78,7 @@ Target Variable:
 1 = Rain Expected
 
 0 = No Rain
+
 
 
 
@@ -95,6 +105,13 @@ The project follows the standard machine learning workflow:
   
   Model Deployment
 
+
+
+
+
+
+
+
 ## Evaluation Metrics Used
 
 The following metrics were used to evaluate the models:
@@ -118,6 +135,14 @@ Accuracy: ~90%
 Rain Detection Recall: ~58%
 
 Balanced Performance Across Classes
+
+
+
+
+
+
+
+
 
 
 ## Installation Guide
@@ -148,9 +173,22 @@ Train models and generate saved model files:
 
 
 
+
+
+
+
+
+
+
+
 ## Streamlit Deployment
 
 This project is deployed using Streamlit Cloud.
+
+
+
+
+
 
 
 
